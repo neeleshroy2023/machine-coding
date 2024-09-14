@@ -12,7 +12,7 @@ const StarRating = () => {
     setStarHoverSelected(0);
   };
   return (
-    <div className="flex justify-center items-center gap-8 text-8xl mt-8">
+    <div className="flex gap-8 text-8xl mt-8">
       {[...Array(5)].map((_, index) => {
         return index < starHoverSelected || index < starSelected ? (
           <FaStar
