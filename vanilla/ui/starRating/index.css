@@ -1,0 +1,24 @@
+body {
+  font-family: sans-serif;
+}
+
+#stars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  font-size: 24px;
+}
+
+#stars figure {
+  margin: 0;
+  padding: 4px;
+}
+
+.filled {
+  color: rgb(235, 179, 77);
+}
+
+.hover-filled {
+  color: rgb(183, 104, 25);
+}
