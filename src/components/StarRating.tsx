@@ -12,13 +12,15 @@ const StarRating = () => {
     setStarHoverSelected(0);
   };
   return (
-    <div className="flex gap-8 text-8xl mt-8">
+    <div className="flex gap-8 text-4xl mt-8">
       {[...Array(5)].map((_, index) => {
         return index < starHoverSelected || index < starSelected ? (
           <FaStar
             onClick={() => setStartSelected(index + 1)}
             onMouseEnter={() => handleMouseEnter(index)}
             onMouseLeave={() => handleMouseLeave()}
+            style={{ color: "#FFBF00" }}
+            className="hover:cursor-pointer"
           />
         ) : (
           <FaRegStar
